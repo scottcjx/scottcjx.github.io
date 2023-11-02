@@ -9,15 +9,15 @@ PS. I like kopi peng. I accept googlepay, paynow, [paylah](./rsc/plspaylahme.jpg
 - @ [tele: scjxw](https://t.me/scjxw)
 - @ [github: scott-cjx](https://github.com/scott-cjx)
 
-## SC1003 Intro to Computing
+## SC1003 Intro to Computing (CS)
 - [Final Assignment Helper](./sc1003-final-assignment-helper)
 - [Labs](https://github.com/scottcjx/scotts-intro-to-comp)
 
-## SC1005
+## SC1005 Digital Logic (CS)
 - [Verilog Labs](https://github.com/scottcjx/sc1005-verilog)
 
-## IE1005 Intro to Computing
-- [Final Assignment Helper](./ie1005-helper)
+## IE1005 Computational Thinking to Programming (EEE)
+- [Some Test Helper](./ie1005-helper)
 
 ## License
 This project is available under the MIT license. See the [LICENSE](./LICENSE.md) file for more info.
