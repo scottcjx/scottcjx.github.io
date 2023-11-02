@@ -16,6 +16,8 @@ PS. I like kopi peng. I accept googlepay, paynow, [paylah](./rsc/plspaylahme.jpg
 ## SC1005
 - [Verilog Labs](https://github.com/scottcjx/sc1005-verilog)
 
+## IE1005 Intro to Computing
+- [Final Assignment Helper](./ie1005-helper)
 
 ## License
 This project is available under the MIT license. See the [LICENSE](./LICENSE.md) file for more info.
