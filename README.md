@@ -9,14 +9,17 @@ PS. I like kopi peng. I accept googlepay, paynow, [paylah](./rsc/plspaylahme.jpg
 - @ [tele: scjxw](https://t.me/scjxw)
 - @ [github: scott-cjx](https://github.com/scott-cjx)
 
-## SC1003 Intro to Computing (CS)
+## (CS) SC1003 Intro to Computing 
 - [Final Assignment Helper](./sc1003-final-assignment-helper)
 - [Labs](https://github.com/scottcjx/scotts-intro-to-comp)
 
-## SC1005 Digital Logic (CS)
+## (CS) SC1005 Digital Logic
 - [Verilog Labs](https://github.com/scottcjx/sc1005-verilog)
 
-## IE1005 Computational Thinking to Programming (EEE)
+## (CS) SC1013 Phyiscs For Computing
+- [Labs](https://github.com/scottcjx/sc1013-labs)
+
+## (EEE) IE1005 Computational Thinking to Programming
 - [Some Test Helper](./ie1005-helper)
 
 ## License
