@@ -22,8 +22,9 @@ PS. I like kopi peng. I accept googlepay, paynow, [paylah](./rsc/plspaylahme.jpg
 ## (EEE) IE1005 Computational Thinking to Programming
 - [Some Test Helper](./ie1005-helper)
 
+### Other Repos (Testing)
 {% for repository in site.github.public_repositories %}
-  * [{{ repository.name }}]({{ repository.html_url }})
+- [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
 
 ## License
