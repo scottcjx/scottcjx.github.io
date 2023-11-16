@@ -11,7 +11,7 @@ PS. I like kopi peng. I accept googlepay, paynow, [paylah](./rsc/plspaylahme.jpg
 
 ## (CS) SC1003 Intro to Computing 
 - [Final Assignment Helper](./sc1003-final-assignment-helper)
-- [Labs](https://github.com/scottcjx/scotts-intro-to-comp)
+- [Labs](https://github.com/scottcjx/sc1003)
 
 ## (CS) SC1005 Digital Logic
 - [Verilog Labs](https://github.com/scottcjx/sc1005-verilog)
@@ -21,6 +21,10 @@ PS. I like kopi peng. I accept googlepay, paynow, [paylah](./rsc/plspaylahme.jpg
 
 ## (EEE) IE1005 Computational Thinking to Programming
 - [Some Test Helper](./ie1005-helper)
+
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
 
 ## License
 This project is available under the MIT license. See the [LICENSE](./LICENSE.md) file for more info.
