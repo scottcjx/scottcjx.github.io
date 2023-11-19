@@ -10,8 +10,9 @@ PS. I like kopi peng. I accept googlepay, paynow, [paylah](./rsc/plspaylahme.jpg
 - @ [github: scott-cjx](https://github.com/scott-cjx)
 
 ## (CS) SC1003 Intro to Computing 
+- [Files](https://github.com/scottcjx/sc1003)
+- [Website](https://scottcjx.github.io//sc1003)
 - [Final Assignment Helper](./sc1003-final-assignment-helper)
-- [Labs](https://github.com/scottcjx/sc1003)
 
 ## (CS) SC1005 Digital Logic
 - [Verilog Labs](https://github.com/scottcjx/sc1005-verilog)
