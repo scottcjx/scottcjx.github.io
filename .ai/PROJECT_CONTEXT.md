@@ -290,6 +290,18 @@ documents when the disagreement reflects a real product decision.
 42. Scott's broader profile includes mechanical work and CAD. These are listed
     in the homepage introduction and research-topic labels, but are not claimed
     as direct Mecatron responsibilities.
+43. The email address is no longer shown in the navigation bar to keep the
+    header compact and usable on mobile. It remains visible in the footer and
+    contact section.
+44. The homepage hero displays the plain-text email beside the CV and PDF
+    links. It is not a mailto link.
+45. The homepage hero keeps the CV and PDF actions on their own row and places
+    the plain-text email beneath them to preserve a balanced layout on narrow
+    screens.
+46. The desktop hero grid aligns the portrait and profile heading from the top,
+    rather than vertically aligning them to the bottom.
+47. The portrait is now larger: up to approximately 270 by 329 pixels on
+    desktop, 210 by 257 pixels on tablet, and 190 by 231 pixels on mobile.
 
 ## Working agreement for future agents
 

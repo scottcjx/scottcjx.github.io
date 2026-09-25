@@ -1,6 +1,6 @@
 # Homepage metadata and topic labels. Edit src/content/home.md for the
 # Markdown introduction.
-intro: "Computer Science undergraduate and systems engineer working across software, robotics, electronics, communications, and applied research."
+intro: "Computer Science undergraduate and systems engineer working across software, mechanical design, robotics, electronics, communications, and applied research."
 profile_image: "/images/profile.png"
 headline:
   - "Scott Cheng"
@@ -11,6 +11,7 @@ linkedin: "https://www.linkedin.com/in/scottcjx/"
 topics:
   - Underwater acoustics
   - Robotics
+  - Mechanical design and CAD
   - Wireless communication
   - Communications systems architecture
   - Control systems
