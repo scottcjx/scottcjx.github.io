@@ -279,6 +279,10 @@ documents when the disagreement reflects a real product decision.
     technical documentation.
 39. The shared footer includes the small attribution note “Vibe coded with
     love.” No project or experience page uses this attribution.
+40. The homepage and CV describe Mecatron as working across autonomous
+    submarines, boats, drones, and general robotics, alongside Scott's systems,
+    electronics, communications, research, and operational responsibilities.
+    The current Mecatron role no longer claims that Scott teaches.
 
 ## Working agreement for future agents
 
