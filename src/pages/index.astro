@@ -1,0 +1,79 @@
+---
+import Shell from '../layouts/Shell.astro';
+import WorkList from '../components/WorkList.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import { site } from '../data/site';
+const projects = (await getCollection('projects')).sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0)).slice(0, 3);
+const publications = (await getCollection('publications')).sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0)).slice(0, 3);
+const homePage = await getEntry('home', 'home');
+if (!homePage) throw new Error('Missing src/content/home.md');
+const { Content: HomeContent } = await render(homePage);
+import cv from '../data/cv.json';
+---
+<Shell>
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="profile-portrait">
+        <img src={site.profile_image} alt="Portrait of Scott Cheng" />
+      </div>
+      <div class="profile-heading">
+        <p class="eyebrow">Profile</p>
+        <h1>{site.headline[0]}<br />{site.headline[1]}</h1>
+      </div>
+      <div class="hero-aside">
+        <p>{site.intro}</p>
+        <p>My work brings together software, electronics, robotics, communications, and applied research.</p>
+        <p><a class="plain-link" href="/cv/">CV</a> · <a class="plain-link" href="/cv.pdf" download>Download PDF</a></p>
+      </div>
+    </div>
+    <div class="introduction">
+      <div><p class="eyebrow">Introduction</p></div>
+      <div class="markdown-content"><HomeContent /></div>
+    </div>
+  </section>
+  <section class="section" id="projects">
+    <div class="section-heading">
+      <h2>Projects</h2>
+      <p>A selection of work across software, electronics, robotics, communications, and research.</p>
+    </div>
+    <WorkList items={projects} label="Project" />
+    <a class="plain-link more-link" href="/projects/">View all projects →</a>
+  </section>
+  <section class="section" id="education">
+    <div class="section-heading">
+      <h2>Education</h2>
+      <p>Current study, exchange experience, and earlier engineering training.</p>
+    </div>
+    <div class="education-list">
+      {cv.education.map((item) => <article class="education-item"><div><h3>{item.institution}</h3><p>{item.studyType}, {item.area}</p></div><span>{item.startDate}—{item.endDate}</span></article>)}
+    </div>
+  </section>
+  <section class="section" id="experience">
+    <div class="section-heading">
+      <h2>Experience & activities</h2>
+      <p>Research, industry experience, team leadership, teaching, and service.</p>
+    </div>
+    <div class="education-list">
+      {cv.experience.map((item) => <article class="education-item"><div><h3><a class="plain-link" href={item.url}>{item.organization}</a></h3><p>{item.role} · {item.description}</p></div><span>{item.location}</span></article>)}
+      {cv.activities.map((item) => <article class="education-item"><div><h3>{item.organization}</h3><p>{item.description}</p></div><span>Student activity</span></article>)}
+    </div>
+  </section>
+  <section class="section">
+    <div class="topic-strip">
+      <h2>Research interests</h2>
+      <div class="topic-list">{site.topics.map((topic: string) => <span>{topic}</span>)}</div>
+    </div>
+  </section>
+  <section class="section" id="publications">
+    <div class="section-heading">
+      <h2>Publications</h2>
+      <p>{site.description} The complete publication record is available on <a class="plain-link" href={site.scholar}>Google Scholar</a>.</p>
+    </div>
+    <WorkList items={publications} label="Publication" />
+    <a class="plain-link more-link" href="/publications/">View all publications →</a>
+  </section>
+  <section class="contact-band">
+    <h2>{site.contact_heading[0]} {site.contact_heading[1]}</h2>
+    <div><p>Correspondence</p><span>{site.email}</span></div>
+  </section>
+</Shell>

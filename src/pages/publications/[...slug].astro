@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import Shell from '../../layouts/Shell.astro';
+export async function getStaticPaths() {
+  const entries = await getCollection('publications');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<Shell title={entry.data.title}>
+  <article class="archive prose">
+    <p class="mono-label">Publication · {entry.data.date?.getFullYear()}</p>
+    <h1>{entry.data.title}</h1>
+    {entry.data.venue && <p class="work-meta work-meta--left">{entry.data.venue}</p>}
+    {entry.data.authors && <div class="publication-authors"><p class="mono-label">Authors</p><p>{entry.data.authors.map((author) => author === 'Cheng, Scott JX' ? <u>{author}</u> : author).map((author, index) => <>{index > 0 && ', '}{author}</>)}</p></div>}
+    <Content />
+    <div class="article-links">
+      {entry.data.paperurl && <a class="text-link" href={entry.data.paperurl}>Read the paper</a>}
+      {entry.data.bibtexurl && <a class="text-link" href={entry.data.bibtexurl}>BibTeX</a>}
+    </div>
+  </article>
+</Shell>

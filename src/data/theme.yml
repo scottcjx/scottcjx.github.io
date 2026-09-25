@@ -1,0 +1,23 @@
+# Site colors. Edit these values to change both colour modes.
+light:
+  background: "#fbfaf7"
+  surface: "#f1eee7"
+  text: "#252525"
+  muted: "#686761"
+  border: "#d9d7d0"
+  primary: "#8d1f1f"
+  secondary: "#4b5563"
+  accent: "#c56a3d"
+  link: "#176b87"
+  onPrimary: "#ffffff"
+dark:
+  background: "#202124"
+  surface: "#2a2c30"
+  text: "#f3f1eb"
+  muted: "#b4b1a8"
+  border: "#4a4945"
+  primary: "#e39a86"
+  secondary: "#aebbd1"
+  accent: "#f0b39b"
+  link: "#79c7d9"
+  onPrimary: "#202124"

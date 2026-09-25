@@ -1,0 +1,17 @@
+{
+  "education": [
+    { "institution": "Nanyang Technological University", "url": "https://www.ntu.edu.sg/", "area": "Computer Science · Second Major in Entrepreneurship · Projected Second Upper Class Honours", "studyType": "Bachelor of Engineering", "startDate": "Aug 2023", "endDate": "Apr 2027" },
+    { "institution": "Queen's University", "url": "https://www.queensu.ca/", "area": "Artificial Intelligence, Machine Learning, Human–Computer Interaction, Networking", "studyType": "Exchange Semester", "startDate": "Jan 2026", "endDate": "Apr 2026" },
+    { "institution": "Singapore Polytechnic", "area": "Engineering With Business", "studyType": "Diploma", "startDate": "2019", "endDate": "2021" }
+  ],
+  "experience": [
+    { "organization": "Acoustics Research Lab, National University of Singapore", "url": "https://www.nus.edu.sg/", "role": "Part-time Research Intern", "location": "Current", "description": "Working on my NTU final-year thesis, Integrated Communications, Sensing, and Propulsion (ICSP), investigating the use of thrusters as transmitters." },
+    { "organization": "Axoft", "url": "https://axoft.us/", "role": "Software and Data Intern", "location": "Cambridge, Massachusetts · Jun 2025 – Dec 2025", "description": "Built hardware-in-the-loop systems for neural electrophysiology data acquisition, synchronization, and real-time processing, including a live decoding pipeline." },
+    { "organization": "Singapore Armed Forces", "role": "National Serviceman", "location": "Singapore · Jul 2021 – Jun 2023", "description": "Built and maintained internal software systems for administrative process automation, reducing manual effort by 200×." },
+    { "organization": "Government Technology Agency of Singapore", "role": "Robotics Engineering Intern", "location": "Singapore · Sep 2020 – Jun 2021", "description": "Built autonomous ground vehicles with cross-fleet communications using ROS and RMF, integrated sensors and software drivers, and implemented a contact-tracing system used by Singapore's Ministry of Health." }
+  ],
+  "activities": [
+    { "organization": "Mecatron - Nanyang Technological University", "role": "Head", "period": "Jul 2026 – Present", "description": "Coordinate work across all teams while contributing directly to networking, electrical-systems architecture and implementation, power systems, communications, and PCB design. Teach external engineering workshops such as Eduboat and technical courses within Mecatron and Nanyang Venture Formula Racing, while contributing to research, business, finance, logistics, operations, and external relations." },
+    { "organization": "Nanyang Venture Formula (NVF) Racing - Nanyang Technological University", "role": "Lead of Software and Electrical Systems", "period": "Nov 2023 – Nov 2024", "description": "Designed and assembled PCBs for vehicle sensors, dashboard, safety-stop systems, and the main vehicle control unit; served as Electrical Safety Officer and taught embedded programming and PCB design." }
+  ]
+}

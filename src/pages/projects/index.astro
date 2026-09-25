@@ -1,0 +1,13 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import WorkList from '../../components/WorkList.astro';
+import { getCollection } from 'astro:content';
+const items = (await getCollection('projects')).sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
+---
+<Shell title="Projects">
+  <section class="archive">
+    <p class="mono-label">Selected work</p>
+    <h1>Projects</h1>
+    <WorkList items={items} label="Project" />
+  </section>
+</Shell>

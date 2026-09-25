@@ -1,0 +1,23 @@
+# Homepage metadata and topic labels. Edit src/content/home.md for the
+# Markdown introduction.
+intro: "Computer Science undergraduate and systems engineer working across software, robotics, electronics, communications, and applied research."
+profile_image: "/images/profile.png"
+headline:
+  - "Scott Cheng"
+  - ""
+description: "Selected projects, publications, research interests, and experience."
+linkedin: "https://www.linkedin.com/in/scottcjx/"
+topics:
+  - Underwater acoustics
+  - Robotics
+  - Wireless communication
+  - Communications systems architecture
+  - Control systems
+  - Power systems
+  - PCB design
+  - Neurotechnology
+  - Marine systems
+  - NeuroAI
+contact_heading:
+  - "Contact"
+  - "information"

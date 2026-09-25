@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from 'astro:content';
+import Shell from '../../layouts/Shell.astro';
+export async function getStaticPaths() {
+  const entries = await getCollection('projects');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<Shell title={entry.data.title}>
+  <article class="archive prose">
+    <p class="mono-label">Project{entry.data.date && ` · ${entry.data.date.getFullYear()}`}</p>
+    <h1>{entry.data.title}</h1>
+    {entry.data.status && <p class="work-meta work-meta--left">{entry.data.status}</p>}
+    <Content />
+    {entry.data.link && <p><a class="plain-link" href={entry.data.link}>Project link →</a></p>}
+  </article>
+</Shell>

@@ -1,0 +1,8 @@
+---
+import Shell from '../../layouts/Shell.astro';
+import WorkList from '../../components/WorkList.astro';
+import { getCollection } from 'astro:content';
+import { site } from '../../data/site';
+const items = (await getCollection('publications')).sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0));
+---
+<Shell title="Publications"><section class="archive"><p class="mono-label">Research output</p><h1>Publications</h1><p class="archive-intro">A selected list of research contributions. The complete record is available on <a class="plain-link" href={site.scholar}>Google Scholar</a>.</p><WorkList items={items} label="Publication" /></section></Shell>

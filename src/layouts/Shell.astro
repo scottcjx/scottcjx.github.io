@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site';
+const { title = site.title } = Astro.props;
+const lightTheme = Object.entries(site.theme.light).map(([key, value]) => `--${key}:${value}`).join(';');
+const darkTheme = Object.entries(site.theme.dark).map(([key, value]) => `--${key}:${value}`).join(';');
+const links = [
+  { label: 'Home', href: '/' },
+  { label: 'Projects', href: '/projects/' },
+  { label: 'Publications', href: '/publications/' },
+  { label: 'CV', href: '/cv/' }
+];
+---
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={site.description} />
+    <link rel="icon" href="/profile.png" />
+    <style set:html={`:root{${lightTheme}}[data-theme="dark"]{${darkTheme}}`} />
+    <title>{title} — {site.title}</title>
+  </head>
+  <body>
+    <header class="masthead">
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="/">SCJX<span>.</span></a>
+        <div class="nav-links">
+          {links.map((link) => <a href={link.href}>{link.label}</a>)}
+          <span class="nav-email">{site.email}</span>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <span class="theme-toggle__track" aria-hidden="true">
+              <span class="theme-toggle__icon theme-toggle__icon--light">☼</span>
+              <span class="theme-toggle__icon theme-toggle__icon--dark">☾</span>
+              <span class="theme-toggle__thumb"></span>
+            </span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer>
+      <div class="footer-links">
+        <a href={site.github}>GitHub ↗</a>
+        <a href={site.linkedin}>LinkedIn ↗</a>
+        <a href={site.scholar}>Google Scholar ↗</a>
+        <span>{site.email}</span>
+      </div>
+      <p>© {new Date().getFullYear()} {site.title}</p>
+    </footer>
+  </body>
+</html>
+<script>
+  const root = document.documentElement;
+  const toggle = document.querySelector<HTMLButtonElement>('.theme-toggle');
+  const saved = localStorage.getItem('theme');
+  const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const setTheme = (theme: 'light' | 'dark') => {
+    root.dataset.theme = theme;
+    if (toggle) {
+      toggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+      toggle.setAttribute('aria-pressed', String(theme === 'dark'));
+    }
+  };
+  setTheme(saved === 'dark' || saved === 'light' ? saved : preferred);
+  toggle?.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', next);
+    setTheme(next);
+  });
+
+  document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach((link) => {
+    const url = new URL(link.href, window.location.origin);
+    if (url.protocol === 'http:' || url.protocol === 'https:') {
+      if (url.origin !== window.location.origin) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
+    }
+  });
+</script>
