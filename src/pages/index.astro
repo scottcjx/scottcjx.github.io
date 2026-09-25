@@ -23,7 +23,7 @@ import cv from '../data/cv.json';
       <div class="hero-aside">
         <p>{site.intro}</p>
         <p>My work brings together software, electronics, robotics, communications, and applied research.</p>
-        <p><a class="plain-link" href="/cv/">CV</a> · <a class="plain-link" href="/cv.pdf" download>Download PDF</a></p>
+        <p><a class="plain-link" href="/cv/">CV</a> <span class="link-separator">|</span> <a class="plain-link" href="/cv.pdf" download>Download PDF</a></p>
       </div>
     </div>
     <div class="introduction">
@@ -37,7 +37,7 @@ import cv from '../data/cv.json';
       <p>A selection of work across software, electronics, robotics, communications, and research.</p>
     </div>
     <WorkList items={projects} label="Project" />
-    <a class="plain-link more-link" href="/projects/">View all projects →</a>
+    <a class="plain-link more-link" href="/projects/">View all projects</a>
   </section>
   <section class="section" id="education">
     <div class="section-heading">
@@ -45,7 +45,7 @@ import cv from '../data/cv.json';
       <p>Current study, exchange experience, and earlier engineering training.</p>
     </div>
     <div class="education-list">
-      {cv.education.map((item) => <article class="education-item"><div><h3>{item.institution}</h3><p>{item.studyType}, {item.area}</p></div><span>{item.startDate}—{item.endDate}</span></article>)}
+      {cv.education.map((item) => <article class="education-item"><div><h3>{item.institution}</h3><p>{item.studyType}, {item.area}</p></div><span>{item.startDate} to {item.endDate}</span></article>)}
     </div>
   </section>
   <section class="section" id="experience">
@@ -54,7 +54,7 @@ import cv from '../data/cv.json';
       <p>Research, industry experience, team leadership, teaching, and service.</p>
     </div>
     <div class="education-list">
-      {cv.experience.map((item) => <article class="education-item"><div><h3><a class="plain-link" href={item.url}>{item.organization}</a></h3><p>{item.role} · {item.description}</p></div><span>{item.location}</span></article>)}
+      {cv.experience.map((item) => <article class="education-item"><div><h3><a class="plain-link" href={item.url}>{item.organization}</a></h3><p>{item.role}. {item.description}</p></div><span>{item.location}</span></article>)}
       {cv.activities.map((item) => <article class="education-item"><div><h3>{item.organization}</h3><p>{item.description}</p></div><span>Student activity</span></article>)}
     </div>
   </section>
@@ -70,7 +70,7 @@ import cv from '../data/cv.json';
       <p>{site.description} The complete publication record is available on <a class="plain-link" href={site.scholar}>Google Scholar</a>.</p>
     </div>
     <WorkList items={publications} label="Publication" />
-    <a class="plain-link more-link" href="/publications/">View all publications →</a>
+    <a class="plain-link more-link" href="/publications/">View all publications</a>
   </section>
   <section class="contact-band">
     <h2>{site.contact_heading[0]} {site.contact_heading[1]}</h2>

@@ -19,7 +19,7 @@ const links = [
     <meta name="description" content={site.description} />
     <link rel="icon" href="/profile.png" />
     <style set:html={`:root{${lightTheme}}[data-theme="dark"]{${darkTheme}}`} />
-    <title>{title} — {site.title}</title>
+    <title>{title} | {site.title}</title>
   </head>
   <body>
     <header class="masthead">
@@ -30,8 +30,8 @@ const links = [
           <span class="nav-email">{site.email}</span>
           <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
             <span class="theme-toggle__track" aria-hidden="true">
-              <span class="theme-toggle__icon theme-toggle__icon--light">☼</span>
-              <span class="theme-toggle__icon theme-toggle__icon--dark">☾</span>
+              <span class="theme-toggle__icon theme-toggle__icon--light">Light</span>
+              <span class="theme-toggle__icon theme-toggle__icon--dark">Dark</span>
               <span class="theme-toggle__thumb"></span>
             </span>
           </button>
@@ -41,9 +41,9 @@ const links = [
     <main><slot /></main>
     <footer>
       <div class="footer-links">
-        <a href={site.github}>GitHub ↗</a>
-        <a href={site.linkedin}>LinkedIn ↗</a>
-        <a href={site.scholar}>Google Scholar ↗</a>
+        <a href={site.github}>GitHub</a>
+        <a href={site.linkedin}>LinkedIn</a>
+        <a href={site.scholar}>Google Scholar</a>
         <span>{site.email}</span>
       </div>
       <p>© {new Date().getFullYear()} {site.title}</p>

@@ -7,9 +7,9 @@ import { site } from '../data/site';
   <section class="archive prose">
     <div class="cv-heading"><h1>Curriculum Vitae</h1><a class="text-link" href="/cv.pdf" download>Download PDF</a></div>
     <h2>Education</h2>
-    {cv.education.map((item) => <div class="cv-row"><strong>{item.institution}</strong><span>{item.studyType} · {item.area}<br />{item.startDate}—{item.endDate}</span></div>)}
+    {cv.education.map((item) => <div class="cv-row"><strong>{item.institution}</strong><span>{item.studyType}. {item.area}<br />{item.startDate} to {item.endDate}</span></div>)}
     <h2>Experience</h2>
-    {cv.experience.map((item) => <div class="cv-row"><strong><a href={item.url}>{item.organization}</a></strong><span>{item.role} · {item.location}<br />{item.description}</span></div>)}
+    {cv.experience.map((item) => <div class="cv-row"><strong><a href={item.url}>{item.organization}</a></strong><span>{item.role}. {item.location}<br />{item.description}</span></div>)}
     <h2>Activities</h2>
     {cv.activities.map((item) => <div class="cv-row"><strong>{item.organization}</strong><span>{item.description}</span></div>)}
     <p>For a current CV, contact me at <span>{site.email}</span>.</p>

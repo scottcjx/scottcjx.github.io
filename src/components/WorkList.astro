@@ -8,7 +8,7 @@ const { items, label } = Astro.props;
 <div class="work-list">
   {items.map((item) => (
     <article class="work-item">
-      <div class="work-year">{item.data.date ? item.data.date.getFullYear() : '—'}</div>
+      <div class="work-year">{item.data.date ? item.data.date.getFullYear() : ''}</div>
       <div>
         <h3><a href={`/${item.collection}/${item.id}/`}>{item.data.title}</a></h3>
         <p>{item.data.excerpt || item.body?.replace(/\s+/g, ' ').slice(0, 180)}</p>

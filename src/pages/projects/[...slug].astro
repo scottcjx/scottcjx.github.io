@@ -10,10 +10,10 @@ const { Content } = await render(entry);
 ---
 <Shell title={entry.data.title}>
   <article class="archive prose">
-    <p class="mono-label">Project{entry.data.date && ` · ${entry.data.date.getFullYear()}`}</p>
+    <p class="mono-label">Project{entry.data.date && `, ${entry.data.date.getFullYear()}`}</p>
     <h1>{entry.data.title}</h1>
     {entry.data.status && <p class="work-meta work-meta--left">{entry.data.status}</p>}
     <Content />
-    {entry.data.link && <p><a class="plain-link" href={entry.data.link}>Project link →</a></p>}
+    {entry.data.link && <p><a class="plain-link" href={entry.data.link}>Project link</a></p>}
   </article>
 </Shell>

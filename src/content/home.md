@@ -2,7 +2,7 @@
 title: Home
 ---
 
-I am a Computer Science undergraduate at [Nanyang Technological University](https://www.ntu.edu.sg/), where I am also pursuing a second major in Entrepreneurship. I recently spent an exchange semester at [Queen's University](https://www.queensu.ca/) studying artificial intelligence, machine learning, human–computer interaction, and graduate-level networking.
+I am a Computer Science undergraduate at [Nanyang Technological University](https://www.ntu.edu.sg/), where I am also pursuing a second major in Entrepreneurship. I recently spent an exchange semester at [Queen's University](https://www.queensu.ca/) studying artificial intelligence, machine learning, human-computer interaction, and graduate-level networking.
 
 My work spans software, data, robotics, electrical systems, communications, and research. As part of my final-year project at NTU, I am a part-time research intern at the Acoustics Research Lab at the [National University of Singapore](https://arl.nus.edu.sg/). My thesis, *Integrated Communications, Sensing, and Propulsion (ICSP)*, investigates the use of thrusters as transmitters.
 
