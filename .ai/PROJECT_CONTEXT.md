@@ -277,6 +277,8 @@ documents when the disagreement reflects a real product decision.
     `src/content/projects/mecatron-autonomous-vehicles.md`. Its description
     stays limited to the user's confirmed work and leaves room for future
     technical documentation.
+39. The autonomous-vehicles project page ends with a note clarifying that only
+    the webpage was vibe coded, not the project or the work behind it.
 
 ## Working agreement for future agents
 
