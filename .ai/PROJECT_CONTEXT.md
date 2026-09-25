@@ -283,9 +283,13 @@ documents when the disagreement reflects a real product decision.
     submarines, boats, drones, and general robotics, alongside Scott's systems,
     electronics, communications, research, and operational responsibilities.
     The current Mecatron role no longer claims that Scott teaches.
-41. Decorative arrow, bullet, sun, moon, and dot symbols were removed from
-    visible interface copy. Links and controls now use plain text labels, and
-    date ranges use words such as "to" for a more natural presentation.
+41. Textual punctuation cleanup removed decorative arrows, bullets, and dot
+    separators from visible copy. The light and dark theme toggle intentionally
+    retains its sun and moon symbols as visual controls, while date ranges use
+    words such as "to" for a more natural presentation.
+42. Scott's broader profile includes mechanical work and CAD. These are listed
+    in the homepage introduction and research-topic labels, but are not claimed
+    as direct Mecatron responsibilities.
 
 ## Working agreement for future agents
 
