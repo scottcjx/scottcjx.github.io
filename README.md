@@ -9,6 +9,8 @@ content model, design system, deployment, or workflow changes.
 ## Edit the site
 
 - Update homepage copy, topics, and contact text in `src/data/home.yml`.
+- Change the number of projects shown on the homepage with `project_limit` in
+  `src/data/home.yml`.
 - Edit `src/content/home.md` for the homepage introduction; it supports
   Markdown links and normal Markdown formatting.
 - Edit `src/data/cv.json` for education, experience, and student activities.

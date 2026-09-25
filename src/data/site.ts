@@ -10,7 +10,7 @@ const theme = parse(fs.readFileSync(themePath, 'utf8'));
 export const site = {
   title: 'Scott Cheng',
   email: 'scottcjx.w@gmail.com',
-  github: 'https://github.com/scott-cjx',
+  github: 'https://github.com/scottcjx',
   scholar: 'https://scholar.google.ca/citations?user=_t5KgzMAAAAJ',
   linkedin: 'https://www.linkedin.com/in/scottcjx/',
   theme,

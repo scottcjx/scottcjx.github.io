@@ -3,7 +3,7 @@ import Shell from '../layouts/Shell.astro';
 import WorkList from '../components/WorkList.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { site } from '../data/site';
-const projects = (await getCollection('projects')).sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0)).slice(0, 3);
+const projects = (await getCollection('projects')).sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0)).slice(0, site.project_limit ?? 3);
 const publications = (await getCollection('publications')).sort((a, b) => (b.data.date?.valueOf() ?? 0) - (a.data.date?.valueOf() ?? 0)).slice(0, 3);
 const homePage = await getEntry('home', 'home');
 if (!homePage) throw new Error('Missing src/content/home.md');

@@ -6,6 +6,7 @@ headline:
   - "Scott Cheng"
   - ""
 description: "Selected projects, publications, research interests, and experience."
+project_limit: 3
 linkedin: "https://www.linkedin.com/in/scottcjx/"
 topics:
   - Underwater acoustics

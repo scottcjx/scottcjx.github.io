@@ -270,6 +270,13 @@ documents when the disagreement reflects a real product decision.
     reporting parser warnings.
 36. Homepage Markdown prose is explicitly assigned the normal `paper` text
     color; only anchor elements inside it use the dedicated `link` color.
+37. The GitHub profile link is `https://github.com/scottcjx`. The homepage
+    project count is controlled by `project_limit` in `src/data/home.yml`,
+    currently set to 3.
+38. Added the ongoing Mecatron autonomous-vehicles project as
+    `src/content/projects/mecatron-autonomous-vehicles.md`. Its description
+    stays limited to the user's confirmed work and leaves room for future
+    technical documentation.
 
 ## Working agreement for future agents
 
