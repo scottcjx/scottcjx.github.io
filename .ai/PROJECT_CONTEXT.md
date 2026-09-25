@@ -277,8 +277,8 @@ documents when the disagreement reflects a real product decision.
     `src/content/projects/mecatron-autonomous-vehicles.md`. Its description
     stays limited to the user's confirmed work and leaves room for future
     technical documentation.
-39. The autonomous-vehicles project page ends with a note clarifying that only
-    the webpage was vibe coded, not the project or the work behind it.
+39. The shared footer includes the small attribution note “Vibe coded with
+    love.” No project or experience page uses this attribution.
 
 ## Working agreement for future agents
 
